@@ -5,6 +5,7 @@ const agentesRouter = require('./routes/agentesRoutes');
 const casosRouter = require('./routes/casosRoutes');
 const authRouter = require('./routes/authRoutes');
 const { errorHandler } = require('./utils/errorHandler');
+const { authenticateToken } = require('./middlewares/authMiddleware');
 
 dotenv.config();
 const app = express();
